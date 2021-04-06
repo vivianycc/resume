@@ -6,8 +6,8 @@
     "image": "",
     "email": "contact@vivianychen.com",
     "phone": "(+886)902-119-798",
-    "url": "http://vivianychen.com",
-    "summary": "Vivian Chen is a self-taught web developer and a designer. She perseveres in frontend technology with her interests in web animation, data visualization, and interactivity. Coming from a design background, she focuses on not only the functionality and performance of a website but also usability, visual design, and user experience. In the process of product development, she prioritizes communication within the team, between users and stakeholders. Her experiences as a UI/UX designer and her continuous pursuit of user-centered design are her greatest asset as she transitions into the role of developer. She strives to be a bridge that connects people and optimizes the product development process",
+    "url": "https://vivianychen.com",
+    "summary": "Vivian Chen is a self-taught web developer and a designer. She perseveres in frontend technology with her interests in web animation, data visualization, and interactivity. Coming from a design background, she focuses on not only the functionality and performance of a website but also usability, visual design, and user experience. In the process of product development, she prioritizes communication within the team, between users and stakeholders. Her experiences as a UI/UX designer and her continuous pursuit of user-centered design are her greatest asset as she transitions into the role of developer. She strives to be a bridge that connects people and optimizes the product development process.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -42,16 +42,16 @@
     {
       "name": "Xtars Live Media",
       "location": "Taipei,Taiwan",
-      "description": "A live video streaming app company",
+      "description": "A live video streaming app company.",
       "position": "UI Designer",
       "url": "https://www.xtars.com/",
       "startDate": "2019-03",
       "endDate": "2021-04",
       "summary": "Vivian worked as the leading UI designer of the product app that endeavers to enrich social engagement between the live streamers and users.",
       "highlights": [
-        "- Set the entire visual design and started a style guideline for the entire app",
-        "- Utilized web development skills to prototype and validate designs and improve communications with the engineering team",
-        "- Planned and Designed a brand new homepage that provides user abundant entertaining content and allows the operation and marketing team to utilize the design and run their campaigns"
+        "- Set the entire visual design and started a style guideline for the entire app.",
+        "- Utilized web development skills to prototype and validate designs and improve communications with the engineering team.",
+        "- Planned and Designed a brand new homepage that provides user abundant entertaining content and allows the operation and marketing team to utilize the design and run their campaigns."
       ]
     }
   ],
@@ -65,7 +65,7 @@
       "summary": "This project introduced resources to people who are interested in coding in rural areas.",
       "highlights": [
         "- Outlined a design curriculum and guided the student to go through a product design process.",
-        "- Designed a web development curriculum that allows the student to make a personal website with basic HTML&CSS"
+        "- Designed a web development curriculum that allows the student to make a personal website with basic HTML&CSS."
       ]
     }
   ],
@@ -85,7 +85,7 @@
   "projects": [
     {
       "name": "Interactive UI Demos",
-      "description": "These are some demos that are used to validate the design and used as communication tools to collaborate with the engineers",
+      "description": "These are some demos that are used to validate the design and used as communication tools to collaborate with the engineers.",
       "keywords": [
         "HTML&CSS",
         "Javascript"
@@ -100,7 +100,7 @@
     },
     {
       "name": "A Little Fish Game",
-      "description": "A little game that is about feeding a fish",
+      "description": "A little game that is about feeding a fish.",
       "keywords": [
         "Canvas",
         "Pixi.js",
@@ -120,12 +120,12 @@
       "title": "Ironman Challenge Achievement",
       "date": "2018-01",
       "awarder": "iThome",
-      "summary": "Published a technical article for 30 consecutive days"
+      "summary": "Published a technical article for 30 consecutive days."
     },{
       "title": "People’s Choice Award",
       "date": "2015-05",
       "awarder": "Nasa Space App Challenge",
-      "summary": "Designed a mobile app that let people find out the nearest celestial events"
+      "summary": "Designed a mobile app that let people find out the nearest celestial events."
     }
   ],
   "skills": [
