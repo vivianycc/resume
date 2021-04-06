@@ -1,0 +1,183 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Vivian Chen",
+    "label": "Web Developer / Interaction Designer",
+    "image": "",
+    "email": "contact@vivianychen.com",
+    "phone": "(+886)902-119-798",
+    "url": "http://vivianychen.com",
+    "summary": "Vivian Chen is a self-taught web developer and a designer. She perseveres in frontend technology with her interests in web animation, data visualization, and interactivity. Coming from a design background, she focuses on not only the functionality and performance of a website but also usability, visual design, and user experience. In the process of product development, she prioritizes communication within the team, between users and stakeholders. Her experiences as a UI/UX designer and her continuous pursuit of user-centered design are her greatest asset as she transitions into the role of developer. She strives to be a bridge that connects people and optimize the product development process",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "@vivianychen",
+        "url": "https://twitter.com/vivianychen"
+      },
+      {
+        "network": "Github",
+        "username": "vivianycc",
+        "url": "https://github.com/vivianycc"
+      },
+      {
+        "network": "Codepen",
+        "username": "chrysophyta",
+        "url": "https://codepen.io/chrysophyta"
+      },
+      {
+        "network": "Behance",
+        "username": "vivianychen",
+        "url": "https://www.behance.net/vivianychen"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Xtars Live Media",
+      "location": "Taipei,Taiwan",
+      "description": "A live video streaming app company",
+      "position": "UI Designer",
+      "url": "https://www.xtars.com/",
+      "startDate": "2019-03",
+      "endDate": "2021-04",
+      "summary": "Vivian worked as the leading UI designer of the product app that endeavers to enrich social engagement between the live streamers and users.",
+      "highlights": [
+        "- Set the entire visual design and started a style guideline for the entire app",
+        "- Utilized web development skills to prototype and validate designs and improve communications with the engineering team",
+        "- Planned and Designed a brand new homepage that provides user abundant entertaining content and allows the operation and marketing team to utilize the design and run their campaigns"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Women Who Code Taipei",
+      "position": "Lecturer",
+      "url": "https://womenjointechcodingclub.github.io/",
+      "startDate": "2018-09-11",
+      "endDate": "2019-04-03",
+      "summary": "This project introduced resources to people who are interested in coding in rural areas.",
+      "highlights": [
+        "- Outlined a design curriculum and guided the student to go through a product design process.",
+        "- Designed a web development curriculum that allows the student to make a personal website with basic HTML&CSS"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Emily Carr University of Art + Design",
+      "url": "https://www.ecuad.ca/",
+      "area": "Interaction Design",
+      "studyType": "Bachelor",
+      "startDate": "2012-09",
+      "endDate": "2016-06",
+      "score": "",
+      "courses": [
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Interactive UI Demos",
+      "description": "These are some demos that are used to validate the design and used as communication tools to collaborate with the engineers",
+      "keywords": [
+        "HTML&CSS",
+        "Javascript"
+      ],
+      "startDate": "2019-03",
+      "endDate": "2021-04",
+      "url": "https://codepen.io/collection/XLwkoJ",
+      "roles": [
+        "Developer",
+        "Designer"
+      ]
+    },
+    {
+      "name": "A Little Fish Game",
+      "description": "A little game that is about feeding a fish",
+      "keywords": [
+        "Canvas",
+        "Pixi.js",
+        "Javascript"
+      ],
+      "startDate": "2018-04",
+      "endDate": "2018-04",
+      "url": "https://www.vivianychen.com/pixi_tutorials/pixi_tutorial_1/",
+      "roles": [
+        "Developer",
+        "Designer"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Ironman Challenge Achievement",
+      "date": "2018-01",
+      "awarder": "iThome",
+      "summary": "Published a technical article for 30 consecutive days"
+    },{
+      "title": "People’s Choice Award",
+      "date": "2015-05",
+      "awarder": "Nasa Space App Challenge",
+      "summary": "Designed a mobile app that let people find out the nearest celestial events"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend Web Development",
+      "level": "",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "Git",
+        "SVG"
+      ]
+    },
+    {
+      "name": "Design",
+      "level": "",
+      "keywords": [
+        "Wireframing",
+        "Prototyping",
+        "UI Design"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Mandarin Chinese",
+      "fluency": "Native"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Photography",
+      "keywords": [
+
+      ]
+    },
+    {
+      "name": "Painting",
+      "keywords": [
+        
+      ]
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
