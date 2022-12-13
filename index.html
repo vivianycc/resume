@@ -1,470 +1,550 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Vivian Chen</title>
-    <meta name="description" content="Vivian Chen is a self-taught web developer and a designer. She perseveres in frontend technology with her interests in web animation, data visualization, and interactivity. Coming from a design background, she focuses on not only the functionality and performance of a website but also usability, visual design, and user experience. In the process of product development, she prioritizes communication within the team, between users and stakeholders. Her experiences as a UI/UX designer and her continuous pursuit of user-centered design are her greatest asset as she transitions into the role of developer. She strives to be a bridge that connects people and optimizes the product development process." />
+    <title>Vivian Chen | Frontend Web Dev & Designer</title>
+    <meta
+      name="description"
+      content="Vivian Chen is a self-taught web developer and a designer. She perseveres in frontend technology with her interests in web animation, data visualization, and interactivity. Coming from a design background, she focuses on not only the functionality and performance of a website but also usability, visual design, and user experience. In the process of product development, she prioritizes communication within the team, between users and stakeholders. Her experiences as a UI/UX designer and her continuous pursuit of user-centered design are her greatest asset as she transitions into the role of developer. She strives to be a bridge that connects people and optimizes the product development process."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
-    <style>:root {
-  /* Colors */
-  --primaryColor: #212529;
-  --secondaryColor: #95a5a6;
-  --accentColor: #f1c40f;
-  --linkColor: #2ecc71;
-  --mutedColor: #f4f6f6;
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+    />
+    <style>
+      :root {
+        /* Colors */
+        --primaryColor: #212529;
+        --secondaryColor: #95a5a6;
+        --accentColor: #f1c40f;
+        --linkColor: #2ecc71;
+        --mutedColor: #f4f6f6;
 
-  /* Typography */
-  --ratio: 1.25;
-  --scale0: 1rem;
-  --scale1: calc(var(--scale0) * var(--ratio));
-  --scale2: calc(var(--scale1) * var(--ratio));
-  --scale3: calc(var(--scale2) * var(--ratio));
-  --scale4: calc(var(--scale3) * var(--ratio));
-  --scale5: calc(var(--scale4) * var(--ratio));
-}
+        /* Typography */
+        --ratio: 1.25;
+        --scale0: 1rem;
+        --scale1: calc(var(--scale0) * var(--ratio));
+        --scale2: calc(var(--scale1) * var(--ratio));
+        --scale3: calc(var(--scale2) * var(--ratio));
+        --scale4: calc(var(--scale3) * var(--ratio));
+        --scale5: calc(var(--scale4) * var(--ratio));
+      }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-html {
-  font-size: 14px;
-}
+      html {
+        font-size: 14px;
+      }
 
-body {
-  color: var(--primaryColor);
-  display: grid;
-  font: 1em/1.5 Lato, sans-serif;
-  gap: 2em;
-  grid-template-columns:
-    [full-start]
-    1fr
-    [main-start side-start]
-    minmax(min-content, 12em)
-    [side-end content-start]
-    minmax(min-content, 36em)
-    [main-end content-end]
-    1fr
-    [full-end];
-  grid-template-rows: auto [content] 0;
-  margin-bottom: 4em;
-}
+      body {
+        color: var(--primaryColor);
+        display: grid;
+        font: 1em/1.5 Lato, sans-serif;
+        gap: 2em;
+        grid-template-columns:
+          [full-start]
+          1fr
+          [main-start side-start]
+          minmax(min-content, 12em)
+          [side-end content-start]
+          minmax(min-content, 36em)
+          [main-end content-end]
+          1fr
+          [full-end];
+        grid-template-rows: auto [content] 0;
+        margin-bottom: 4em;
+      }
 
-body::before {
-  content: '';
-  grid-column: full;
-  grid-row: content;
-}
+      body::before {
+        content: "";
+        grid-column: full;
+        grid-row: content;
+      }
 
-ol,
-ul {
-  padding-left: 1em;
-}
+      ol,
+      ul {
+        padding-left: 1em;
+      }
 
-li + li {
-  margin-top: 0.2em;
-}
+      li + li {
+        margin-top: 0.2em;
+      }
 
-li::marker {
-  color: var(--mutedColor);
-}
+      li::marker {
+        color: var(--mutedColor);
+      }
 
-a {
-  color: var(--linkColor);
-  text-decoration: none;
-  transition: color 0.2s;
-}
+      a {
+        color: var(--linkColor);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
 
-a:focus,
-a:hover {
-  color: var(--accentColor);
-}
+      a:focus,
+      a:hover {
+        color: var(--accentColor);
+      }
 
-h1,
-h2,
-h3,
-h5 {
-  font-weight: normal;
-}
+      h1,
+      h2,
+      h3,
+      h5 {
+        font-weight: normal;
+      }
 
-h1,
-h2,
-h3 {
-  line-height: 1.2;
-}
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+      }
 
-h1 {
-  font-size: var(--scale5);
-}
+      h1 {
+        font-size: var(--scale5);
+      }
 
-h2 {
-  color: var(--secondaryColor);
-  font-size: var(--scale4);
-}
+      h2 {
+        color: var(--secondaryColor);
+        font-size: var(--scale4);
+      }
 
-h3 {
-  color: var(--accentColor);
-  font-size: var(--scale3);
-  grid-column: side;
-  margin-bottom: 1rem;
-}
+      h3 {
+        color: var(--accentColor);
+        font-size: var(--scale3);
+        grid-column: side;
+        margin-bottom: 1rem;
+      }
 
-h4 {
-  font-size: var(--scale2);
-}
+      h4 {
+        font-size: var(--scale2);
+      }
 
-h5 {
-  font-size: var(--scale1);
-}
+      h5 {
+        font-size: var(--scale1);
+      }
 
-h6 {
-  font-size: var(--scale0);
-}
+      h6 {
+        font-size: var(--scale0);
+      }
 
-blockquote {
-  border-left: 0.2em solid var(--mutedColor);
-  padding-left: 1em;
-}
+      blockquote {
+        border-left: 0.2em solid var(--mutedColor);
+        padding-left: 1em;
+      }
 
-cite {
-  color: var(--secondaryColor);
-  font-style: inherit;
-}
+      cite {
+        color: var(--secondaryColor);
+        font-style: inherit;
+      }
 
-cite::before {
-  content: '— ';
-}
+      cite::before {
+        content: "— ";
+      }
 
-.masthead {
-  background: var(--mutedColor);
-  display: inherit;
-  gap: inherit;
-  grid-column: full;
-  grid-template-columns: inherit;
-  padding: 4em 0;
-  row-gap: 0;
-}
+      .masthead {
+        background: var(--mutedColor);
+        display: inherit;
+        gap: inherit;
+        grid-column: full;
+        grid-template-columns: inherit;
+        padding: 4em 0;
+        row-gap: 0;
+      }
 
-.masthead > *,
-section {
-  grid-column: main;
-}
+      .masthead > *,
+      section {
+        grid-column: main;
+      }
 
-article > * + *,
-blockquote > * + * {
-  margin-top: 0.6em;
-}
+      article > * + *,
+      blockquote > * + * {
+        margin-top: 0.6em;
+      }
 
-.stack {
-  display: grid;
-  gap: 1.5em;
-}
+      .stack {
+        display: grid;
+        gap: 1.5em;
+      }
 
-.grid-list {
-  display: grid;
-  gap: 1em;
-}
+      .grid-list {
+        display: grid;
+        gap: 1em;
+      }
 
-.spaced-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+      .spaced-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
-.spaced-list:first-child::before {
-  border-bottom: 1px solid var(--mutedColor);
-  content: '';
-  flex-grow: 1;
-  margin: 0 1em;
-  order: 1;
-}
+      .spaced-list:first-child::before {
+        border-bottom: 1px solid var(--mutedColor);
+        content: "";
+        flex-grow: 1;
+        margin: 0 1em;
+        order: 1;
+      }
 
-.spaced-list > :nth-child(2) {
-  order: 2;
-}
+      .spaced-list > :nth-child(2) {
+        order: 2;
+      }
 
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-}
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+      }
 
-.tag-list > li {
-  background: var(--mutedColor);
-  margin: 0 0.2em 0.2em 0;
-  padding: 0.2em 0.6em;
-}
+      .tag-list > li {
+        background: var(--mutedColor);
+        margin: 0 0.2em 0.2em 0;
+        padding: 0.2em 0.6em;
+      }
 
-@media print, (min-width: 48em) {
-  h3 {
-    text-align: right;
-    margin-bottom: inherit;
-  }
+      @media print, (min-width: 48em) {
+        h3 {
+          text-align: right;
+          margin-bottom: inherit;
+        }
 
-  .masthead > *,
-  section {
-    grid-column: content;
-  }
+        .masthead > *,
+        section {
+          grid-column: content;
+        }
 
-  section {
-    display: contents;
-  }
+        section {
+          display: contents;
+        }
 
-  .grid-list {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-</style>
+        .grid-list {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
-      <header class="masthead">
-          <h1>Vivian Chen</h1>
-          <h2>Web Developer / Interaction Designer</h2>
-      </header>
-      <section id="contact">
-        <h3>Contact</h3>
-        <div class="grid-list">
-            <div>
-              <h4>Email</h4>
-              <a href="mailto:contact@vivianychen.com">contact@vivianychen.com</a>
-            </div>
-            <div>
-              <h4>Phone</h4>
-              (+886)902-119-798
-            </div>
-            <div>
-              <h4>Website</h4>
-              <a href="https://vivianychen.com">vivianychen.com</a>
-            </div>
+    <header class="masthead">
+      <h1>Vivian Chen</h1>
+      <h2>Front-end Web Developer / Interaction Designer</h2>
+    </header>
+    <section id="contact">
+      <h3>Contact</h3>
+      <div class="grid-list">
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:hello@vivianyc.com">hello@vivianyc.com</a>
         </div>
-      </section>
-        <section id="about">
-          <h3>About</h3>
-          <article>
-            <p>Vivian Chen is a self-taught web developer and a designer. She perseveres in frontend technology with her interests in web animation, data visualization, and interactivity. Coming from a design background, she focuses on not only the functionality and performance of a website but also usability, visual design, and user experience. In the process of product development, she prioritizes communication within the team, between users and stakeholders. Her experiences as a UI/UX designer and her continuous pursuit of user-centered design are her greatest asset as she transitions into the role of developer. She strives to be a bridge that connects people and optimizes the product development process.</p>
-          </article>
-        </section>
-        <section id="profiles">
-          <h3>Profiles</h3>
-          <div class="grid-list">
-              <div>
-                  <h4>Twitter</h4>
-                    <a href="https://twitter.com/vivianychen">@vivianychen</a>
-              </div>
-              <div>
-                  <h4>Github</h4>
-                    <a href="https://github.com/vivianycc">vivianycc</a>
-              </div>
-              <div>
-                  <h4>Codepen</h4>
-                    <a href="https://codepen.io/chrysophyta">chrysophyta</a>
-              </div>
-              <div>
-                  <h4>Behance</h4>
-                    <a href="https://www.behance.net/vivianychen">vivianychen</a>
-              </div>
-          </div>
-        </section>
+        <div>
+          <h4>Phone</h4>
+          0902-119-798
+        </div>
+        <div>
+          <h4>Website</h4>
+          <a href="https://vivianyc.com">vivianyc.com</a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h3>About</h3>
+      <article>
+        <p>
+          Vivian Chen is a self-taught web developer and a designer. She
+          perseveres in frontend technology with her interests in web animation,
+          data visualization, and interactivity. Coming from a design
+          background, she focuses on not only the functionality and performance
+          of a website but also usability, visual design, and user experience.
+          In the process of product development, she prioritizes communication
+          within the team, between users and stakeholders. Her experiences as a
+          UI/UX designer and her continuous pursuit of user-centered design are
+          her greatest asset as she transitions into the role of developer. She
+          strives to be a bridge that connects people and optimizes the product
+          development process.
+        </p>
+      </article>
+    </section>
+    <section id="profiles">
+      <h3>Profiles</h3>
+      <div class="grid-list">
+        <div>
+          <h4>Twitter</h4>
+          <a href="https://twitter.com/vivianychen">@vivianychen</a>
+        </div>
+        <div>
+          <h4>Github</h4>
+          <a href="https://github.com/vivianycc">vivianycc</a>
+        </div>
+        <div>
+          <h4>Codepen</h4>
+          <a href="https://codepen.io/vivianycc">vivianycc</a>
+        </div>
+        <div>
+          <h4>Behance</h4>
+          <a href="https://www.behance.net/vivianychen">vivianychen</a>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h3>Projects</h3>
+      <div class="stack">
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>Tale - A diary app for your pets&#x27; well-being</h4>
+              <span>
+                <time datetime="2022-09">Sep 2022</time> –
+                <time datetime="2022-12">Dec 2022</time>
+              </span>
+            </div>
+            <div class="spaced-list">
+              <span>
+                <strong>Developer, Designer</strong>
+              </span>
+              <a href="https://github.com/vivianycc/tale-app"
+                >github.com/vivianycc/tale-app</a
+              >
+            </div>
+          </header>
+          <p>
+            Tale is a diary app made for your pets. You can record what they've
+            been eating, keep track of their health measures, and save a list of
+            the food they like.
+          </p>
+        </article>
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>Google Calendar Clone</h4>
+              <span>
+                <time datetime="2022-06">Jun 2022</time> –
+                <time datetime="2022-08">Aug 2022</time>
+              </span>
+            </div>
+            <div class="spaced-list">
+              <span>
+                <strong>Developer</strong>
+              </span>
+              <a href="https://github.com/vivianycc/calendar-app"
+                >github.com/vivianycc/calendar-app</a
+              >
+            </div>
+          </header>
+          <p>
+            This is a project of practice made with React. The user is able to
+            create, update, delete events in this calendar app
+          </p>
+        </article>
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>A Little Fish Game</h4>
+              <span>
+                <time datetime="2018-04">Apr 2018</time> –
+                <time datetime="2018-04">Apr 2018</time>
+              </span>
+            </div>
+            <div class="spaced-list">
+              <span>
+                <strong>Developer, Designer</strong>
+              </span>
+              <a
+                href="https://www.vivianychen.com/pixi_tutorials/pixi_tutorial_1/"
+                >www.vivianychen.com/pixi_tutorials/pixi_tutorial_1</a
+              >
+            </div>
+          </header>
+          <p>A little game that is about feeding a fish.</p>
+        </article>
+      </div>
+    </section>
+    <section id="work">
+      <h3>Work</h3>
+      <div class="stack">
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>Xtars Live Media</h4>
+              <span>
+                <time datetime="2019-03">Mar 2019</time> –
+                <time datetime="2021-04">Apr 2021</time>
+              </span>
+            </div>
+            <div class="spaced-list">
+              <strong>UI Designer</strong>
+              <a href="https://www.xtars.com/">www.xtars.com</a>
+            </div>
+          </header>
+          <p>
+            Vivian worked as the leading UI designer of the product app that
+            endeavers to enrich social engagement between the live streamers and
+            users.
+          </p>
+          <h5>Highlights</h5>
+          <ul>
+            <li>
+              - Set the entire visual design and started a style guideline for
+              the entire app.
+            </li>
+            <li>
+              - Utilized web development skills to prototype and validate
+              designs and improve communications with the engineering team.
+            </li>
+            <li>
+              - Planned and Designed a brand new homepage that provides user
+              abundant entertaining content and allows the operation and
+              marketing team to utilize the design and run their campaigns.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section id="volunteer">
+      <h3>Volunteer</h3>
+      <div class="stack">
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>Women Who Code Taipei</h4>
+              <span>
+                <time datetime="2018-09-11">Sep 2018</time> –
+                <time datetime="2019-04-03">Apr 2019</time>
+              </span>
+            </div>
+            <div class="spaced-list">
+              <strong>Lecturer</strong>
+              <a href="https://womenjointechcodingclub.github.io/"
+                >womenjointechcodingclub.github.io</a
+              >
+            </div>
+          </header>
+          <p>
+            This project introduced resources to people who are interested in
+            coding in rural areas.
+          </p>
+          <h5>Highlights</h5>
+          <ul>
+            <li>
+              - Outlined a design curriculum and guided the student to go
+              through a product design process.
+            </li>
+            <li>
+              - Designed a web development curriculum that allows the student to
+              make a personal website with basic HTML&amp;CSS.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section id="education">
+      <h3>Education</h3>
+      <div class="stack">
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>Emily Carr University of Art + Design</h4>
+              <span>
+                <time datetime="2012-09">Sep 2012</time> –
+                <time datetime="2016-06">Jun 2016</time>
+              </span>
+            </div>
+            <div class="spaced-list">
+              <strong>Interaction Design</strong>
+              <a href="https://www.ecuad.ca/">www.ecuad.ca</a>
+            </div>
+          </header>
+          <p>Bachelor</p>
+        </article>
+      </div>
+    </section>
 
-      <section id="work">
-        <h3>Work</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Xtars Live Media</h4>
-                  <span>
-                    <time datetime="2019-03">Mar 2019</time> –
-                    <time datetime="2021-04">Apr 2021</time>
-                  </span>
-                </div>
-                <div class="spaced-list">
-                    <strong>UI Designer</strong>
-                    <a href="https://www.xtars.com/">www.xtars.com</a>
-                </div>
-              </header>
-                <p>Vivian worked as the leading UI designer of the product app that endeavers to enrich social engagement between the live streamers and users.</p>
-                <h5>Highlights</h5>
-                <ul>
-                    <li>- Set the entire visual design and started a style guideline for the entire app.</li>
-                    <li>- Utilized web development skills to prototype and validate designs and improve communications with the engineering team.</li>
-                    <li>- Planned and Designed a brand new homepage that provides user abundant entertaining content and allows the operation and marketing team to utilize the design and run their campaigns.</li>
-                </ul>
-            </article>
-        </div>
-      </section>
-      <section id="volunteer">
-        <h3>Volunteer</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Women Who Code Taipei</h4>
-                  <span>
-                    <time datetime="2018-09-11">Sep 2018</time> –
-                    <time datetime="2019-04-03">Apr 2019</time>
-                  </span>
-                </div>
-                <div class="spaced-list">
-                    <strong>Lecturer</strong>
-                    <a href="https://womenjointechcodingclub.github.io/">womenjointechcodingclub.github.io</a>
-                </div>
-              </header>
-                <p>This project introduced resources to people who are interested in coding in rural areas.</p>
-                <h5>Highlights</h5>
-                <ul>
-                    <li>- Outlined a design curriculum and guided the student to go through a product design process.</li>
-                    <li>- Designed a web development curriculum that allows the student to make a personal website with basic HTML&amp;CSS.</li>
-                </ul>
-            </article>
-        </div>
-      </section>
-      <section id="education">
-        <h3>Education</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Emily Carr University of Art + Design</h4>
-                  <span>
-                    <time datetime="2012-09">Sep 2012</time> –
-                    <time datetime="2016-06">Jun 2016</time>
-                  </span>
-                </div>
-                <div class="spaced-list">
-                    <strong>Interaction Design</strong>
-                    <a href="https://www.ecuad.ca/">www.ecuad.ca</a>
-                </div>
-              </header>
-                <p>Bachelor</p>
-            </article>
-        </div>
-      </section>
-      <section id="projects">
-        <h3>Projects</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Interactive UI Demos</h4>
-                  <span>
-                    <time datetime="2019-03">Mar 2019</time> –
-                    <time datetime="2021-04">Apr 2021</time>
-                  </span>
-                </div>
-                <div class="spaced-list">
-                  <span>
-                      <strong>Developer, Designer</strong>
-                  </span>
-                    <a href="https://codepen.io/collection/XLwkoJ">codepen.io/collection/XLwkoJ</a>
-                </div>
-              </header>
-                <p>These are some demos that are used to validate the design and used as communication tools to collaborate with the engineers.</p>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>A Little Fish Game</h4>
-                  <span>
-                    <time datetime="2018-04">Apr 2018</time> –
-                    <time datetime="2018-04">Apr 2018</time>
-                  </span>
-                </div>
-                <div class="spaced-list">
-                  <span>
-                      <strong>Developer, Designer</strong>
-                  </span>
-                    <a href="https://www.vivianychen.com/pixi_tutorials/pixi_tutorial_1/">www.vivianychen.com/pixi_tutorials/pixi_tutorial_1</a>
-                </div>
-              </header>
-                <p>A little game that is about feeding a fish.</p>
-            </article>
-        </div>
-      </section>
-      <section id="awards">
-        <h3>Awards</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Ironman Challenge Achievement</h4>
-                    <time datetime="2018-01">Jan 2018</time>
-                </div>
-                <div class="spaced-list">
-                    <div>
-                      Awarded by <strong>iThome</strong>
-                    </div>
-                </div>
-              </header>
-                <p>Published a technical article for 30 consecutive days.</p>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>People’s Choice Award</h4>
-                    <time datetime="2015-05">May 2015</time>
-                </div>
-                <div class="spaced-list">
-                    <div>
-                      Awarded by <strong>Nasa Space App Challenge</strong>
-                    </div>
-                </div>
-              </header>
-                <p>Designed a mobile app that let people find out the nearest celestial events.</p>
-            </article>
-        </div>
-      </section>
-      <section id="skills">
-        <h3>Skills</h3>
-        <div class="grid-list">
-            <div>
-                <h4>Frontend Web Development</h4>
-                <ul class="tag-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>React</li>
-                    <li>Git</li>
-                    <li>SVG</li>
-                </ul>
+    <section id="awards">
+      <h3>Awards</h3>
+      <div class="stack">
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>Ironman Challenge Achievement</h4>
+              <time datetime="2018-01">Jan 2018</time>
             </div>
-            <div>
-                <h4>Design</h4>
-                <ul class="tag-list">
-                    <li>Wireframing</li>
-                    <li>Prototyping</li>
-                    <li>UI Design</li>
-                </ul>
+            <div class="spaced-list">
+              <div>Awarded by <strong>iThome</strong></div>
             </div>
+          </header>
+          <p>Published a technical article for 30 consecutive days.</p>
+        </article>
+      </div>
+    </section>
+    <section id="skills">
+      <h3>Skills</h3>
+      <div class="grid-list">
+        <div>
+          <h4>Frontend Fundamentals</h4>
+          <ul class="tag-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>RWD</li>
+            <li>Bootstrap</li>
+            <li>Tailwind CSS</li>
+            <li>SVG</li>
+          </ul>
         </div>
-      </section>
-      <section id="languages">
-        <h3>Languages</h3>
-        <div class="grid-list">
-            <div>
-                <h4>English</h4>
-              Fluent
-            </div>
-            <div>
-                <h4>Mandarin Chinese</h4>
-              Native
-            </div>
+        <div>
+          <h4>React.js Ecosystem</h4>
+          <ul class="tag-list">
+            <li>React Hooks</li>
+            <li>Context API</li>
+            <li>React Router</li>
+            <li>React Hook Forms</li>
+            <li>Styled Components</li>
+          </ul>
         </div>
-      </section>
-      <section id="interests">
-        <h3>Interests</h3>
-        <div class="grid-list">
-            <div>
-                <h4>Photography</h4>
-            </div>
-            <div>
-                <h4>Painting</h4>
-            </div>
+        <div>
+          <h4>Dev Tooling</h4>
+          <ul class="tag-list">
+            <li>Git</li>
+            <li>Github</li>
+            <li>Firebase</li>
+            <li>Parcel</li>
+          </ul>
         </div>
-      </section>
+        <div>
+          <h4>Design</h4>
+          <ul class="tag-list">
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+            <li>UI Design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="languages">
+      <h3>Languages</h3>
+      <div class="grid-list">
+        <div>
+          <h4>English</h4>
+          Fluent
+        </div>
+        <div>
+          <h4>Mandarin Chinese</h4>
+          Native
+        </div>
+      </div>
+    </section>
+    <section id="interests">
+      <h3>Interests</h3>
+      <div class="grid-list">
+        <div>
+          <h4>Photography</h4>
+        </div>
+        <div>
+          <h4>Painting</h4>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
