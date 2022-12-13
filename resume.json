@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Vivian Chen",
-    "label": "Web Developer / Interaction Designer",
+    "label": "Front-end Web Developer / Interaction Designer",
     "image": "",
-    "email": "contact@vivianychen.com",
-    "phone": "(+886)902-119-798",
-    "url": "https://vivianychen.com",
+    "email": "hello@vivianyc.com",
+    "phone": "0902-119-798",
+    "url": "https://vivianyc.com",
     "summary": "Vivian Chen is a self-taught web developer and a designer. She perseveres in frontend technology with her interests in web animation, data visualization, and interactivity. Coming from a design background, she focuses on not only the functionality and performance of a website but also usability, visual design, and user experience. In the process of product development, she prioritizes communication within the team, between users and stakeholders. Her experiences as a UI/UX designer and her continuous pursuit of user-centered design are her greatest asset as she transitions into the role of developer. She strives to be a bridge that connects people and optimizes the product development process.",
     "location": {
       "address": "",
@@ -28,8 +28,8 @@
       },
       {
         "network": "Codepen",
-        "username": "chrysophyta",
-        "url": "https://codepen.io/chrysophyta"
+        "username": "vivianycc",
+        "url": "https://codepen.io/vivianycc"
       },
       {
         "network": "Behance",
@@ -78,41 +78,36 @@
       "startDate": "2012-09",
       "endDate": "2016-06",
       "score": "",
-      "courses": [
-      ]
+      "courses": []
     }
   ],
   "projects": [
     {
-      "name": "Interactive UI Demos",
-      "description": "These are some demos that are used to validate the design and used as communication tools to collaborate with the engineers.",
-      "keywords": [
-        "HTML&CSS",
-        "Javascript"
-      ],
-      "startDate": "2019-03",
-      "endDate": "2021-04",
-      "url": "https://codepen.io/collection/XLwkoJ",
-      "roles": [
-        "Developer",
-        "Designer"
-      ]
+      "name": "Tale - A diary app for your pets' well-being",
+      "description": "Tale is a diary app made for your pets. You can record what they've been eating, keep track of their health measures, and save a list of the food they like.",
+      "keywords": ["React", "Javascript", "Firebase", "SPA"],
+      "startDate": "2022-09",
+      "endDate": "2022-12",
+      "url": "https://github.com/vivianycc/tale-app",
+      "roles": ["Developer", "Designer"]
+    },
+    {
+      "name": "Google Calendar Clone",
+      "description": "This is a project of practice made with React. The user is able to create, update, delete events in this calendar app",
+      "keywords": ["React", "Javascript", "Tailwind CSS", "SPA"],
+      "startDate": "2022-06",
+      "endDate": "2022-08",
+      "url": "https://github.com/vivianycc/calendar-app",
+      "roles": ["Developer"]
     },
     {
       "name": "A Little Fish Game",
       "description": "A little game that is about feeding a fish.",
-      "keywords": [
-        "Canvas",
-        "Pixi.js",
-        "Javascript"
-      ],
+      "keywords": ["Canvas", "Pixi.js", "Javascript"],
       "startDate": "2018-04",
       "endDate": "2018-04",
       "url": "https://www.vivianychen.com/pixi_tutorials/pixi_tutorial_1/",
-      "roles": [
-        "Developer",
-        "Designer"
-      ]
+      "roles": ["Developer", "Designer"]
     }
   ],
   "awards": [
@@ -121,34 +116,42 @@
       "date": "2018-01",
       "awarder": "iThome",
       "summary": "Published a technical article for 30 consecutive days."
-    },{
-      "title": "People’s Choice Award",
-      "date": "2015-05",
-      "awarder": "Nasa Space App Challenge",
-      "summary": "Designed a mobile app that let people find out the nearest celestial events."
     }
   ],
   "skills": [
     {
-      "name": "Frontend Web Development",
+      "name": "Frontend Fundamentals",
       "level": "",
       "keywords": [
         "HTML",
         "CSS",
         "Javascript",
-        "React",
-        "Git",
+        "RWD",
+        "Bootstrap",
+        "Tailwind CSS",
         "SVG"
       ]
     },
     {
-      "name": "Design",
+      "name": "React.js Ecosystem",
       "level": "",
       "keywords": [
-        "Wireframing",
-        "Prototyping",
-        "UI Design"
+        "React Hooks",
+        "Context API",
+        "React Router",
+        "React Hook Forms",
+        "Styled Components"
       ]
+    },
+    {
+      "name": "Dev Tooling",
+      "level": "",
+      "keywords": ["Git", "Github", "Firebase", "Parcel"]
+    },
+    {
+      "name": "Design",
+      "level": "",
+      "keywords": ["Wireframing", "Prototyping", "UI Design"]
     }
   ],
   "languages": [
@@ -164,20 +167,16 @@
   "interests": [
     {
       "name": "Photography",
-      "keywords": [
-
-      ]
+      "keywords": []
     },
     {
       "name": "Painting",
-      "keywords": [
-        
-      ]
+      "keywords": []
     }
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
+    "lastModified": "2022-12-24T15:53:00"
   }
 }
